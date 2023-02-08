@@ -1,0 +1,308 @@
+/*transfrom area start*/
+body{
+ font-family: 'Roboto Mono', monospace;
+}
+.vv{
+ text-align: center;
+ background-image: linear-gradient(30deg, red, blue);
+ padding-left: 50px;
+ padding-right: 50px;
+ border-radius: 10px;
+ color: white;
+ float: 800;
+}
+.hard{
+ text-align: center;
+ background-image: linear-gradient(180deg, rgb(49, 20, 166), rgb(30, 147, 53));
+ text-decoration: none;
+ padding: 10px 20px;
+ border-radius: 7px;
+ color: white;
+ float: 800;
+}
+.box{
+ width:  400px;
+ height: 200px;
+ border: 5px solid rgb(18, 97, 97);  
+ overflow: scroll;
+}
+.box2{
+ border: 5px solid blue;
+ width:  400px;
+ height: 200px;  
+ overflow: scroll;
+}
+.images .logo{
+ width: 100px;
+ height: 100px;
+}
+.images .logos{
+ width: 120px;
+ height: 120px;
+}
+.images .logoss{
+ width: 140px;
+ height: 140px;
+}
+.images .logosss{
+ width: 160px;
+ height: 160px;
+}
+.images .logossss{
+ width: 200px;
+ height: 200px;
+}
+.box-outer{
+ width: 100px;
+ height: 100px;
+ border: 1px solid rebeccapurple;
+ background-color: gray;
+}
+.box-inner{
+ width: 100px;
+ height: 100px;
+ border: 1px solid goldenrod;
+ background-color: aqua;
+ transform: scale(0.6);
+ transform: translateX(100px);
+ transform: rotate(30deg) scale(0.75);
+}
+/*transfrom area end*/
+
+
+
+/*Using CSS transitions Start*/
+.dox{
+ height: 200px;
+ width: 200px;
+ border: 5px solid cyan;
+ background-color: green;
+ transition: background-color 20s ease 3s;
+}
+.dox:hover{
+ background-color: blue;
+}
+
+
+
+.xox{
+ height: 300px;
+ width: 300px;
+ border: 5px solid cyan;
+ background-color: rgb(79, 10, 116);
+ transition: width 20s ease-in 3s;
+}
+.xox:hover{
+ width: 1300px;
+}
+
+
+
+.xoxl{
+ height: 300px;
+ width: 300px;
+ border: 5px solid rgb(28, 94, 94);
+ background-color: rgb(126, 24, 53);
+ transition: height 20s ease-in 3s;
+}
+.xoxl:hover{
+ height: 1300px;
+}
+/*Using CSS transitions End*/
+
+
+
+/*cricket area start*/
+ .bat{
+ transition: transform 0.1s ease-in-out;
+ }
+ .bat:hover{
+ transform: rotate(-60deg);
+ transform-origin: 100% 0%;
+ }
+ 
+ 
+
+ .ball{
+  height: 50px;
+  width: 50px;
+  border-radius: 60%;
+  background-color: red; 
+  position: relative;
+  left: 292px;
+  transition: transfrom 1s ease-in-out 0.3s;
+ }
+ .field:hover .ball{
+  transform: translate(800px, -200px);
+ }
+/*cricket area end*/
+
+
+
+
+
+
+/*animation area start*/
+@keyframes identifie {
+ 0%{
+  left: 0;
+  background-color: cadetblue;
+ }
+ 100%{
+  left: 800px;
+  background-color: darkorchid;
+ }
+}
+.stagee{
+ background-color: rgb(12, 127, 125);
+ height: 200px;
+ min-width: 800px;
+}
+.ballee{
+ width: 90px;
+ height: 90px;
+ border-radius: 50%;
+ background-color: rgb(22, 7, 98);
+ position: relative;
+}
+.stagee:hover .ballee{
+ animation: identifie 5s ease-in-out 1s infinite alternate ;
+}
+
+
+
+
+
+
+
+
+
+@keyframes identifier {
+ 0%{
+  left: 0;
+  top: 0;
+  background-color: yellow;
+ }
+ 50%{
+  left: 400px;
+  top: 100px;
+  background-color: red;
+ }
+ 100%{
+  left: 800px;
+  top: 0;
+  background-color: brown;
+ }
+}
+.stage{
+ background-color: navy;
+ height: 200px;
+}
+.balle{
+ width: 90px;
+ height: 90px;
+ border-radius: 50%;
+ background-color: chartreuse;
+ position: relative;
+}
+.stage:hover .balle{
+ animation: identifier 5s ease-in-out 1s infinite alternate;
+}
+/*animation area end*/
+
+
+
+
+/*flaxbox area srart*/
+.container{
+ display: flex;
+ justify-content: space-evenly;
+ align-items: center;
+ flex-direction: column;
+}
+.kol{
+ width: 300px;
+ height: 300px;
+ font-size: 40px;
+ border: 4px solid mediumspringgreen;
+ border-radius: 5%;
+}
+/*flaxbox area end*/
+
+
+
+/*gride area start*/
+.gride{
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ gap: 20px;
+}
+.mol{
+ border: 3px solid fuchsia;
+}
+/*gride area end*/
+
+
+
+
+
+/*calendar area start */
+.hhh{
+ color: deepskyblue;
+}
+.hh{
+ text-align: center;
+ color: chocolate;
+}
+.kkk{
+ color: red;
+}
+.ttt{
+ color: blue;
+}
+.calendar ul{
+ display: grid;
+ grid-template-columns: repeat(7, 1fr);
+ gap: 1em;
+ font-size: 2.5em;
+}
+ .calendar li{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ list-style: none;
+ height: 125px;
+ background-color: lightblue;
+}
+.other-month{
+ background-color: lightseagreen !important;
+}
+/* calendar area end*/
+
+
+
+
+
+/*Using media queries*/
+.mmm{
+ text-align: center;
+ color: palevioletred;
+}
+.subscripshon{
+ display: flex;
+ flex-direction: row;
+ max-width: 1200px;
+ margin: 0 auto;
+ flex-wrap: wrap;
+}
+.food{
+ border: 3px solid bisque;
+ border-radius: 30px;
+ margin: 10px;
+ width: 500px;
+}
+.food img{
+ width: 100%;
+}
+
+/*Using media queries*/
